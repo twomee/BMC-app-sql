@@ -1,0 +1,11 @@
+version: '3'
+services:
+    bmc-sql:
+        build: .
+        ports:
+            - "5000:5000"
+        volumes:
+            - ../passengers.db:/app/data
+
+#to run it: sudo docker-compose up
+
